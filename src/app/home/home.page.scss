@@ -1,0 +1,56 @@
+p {
+  margin: 0;
+}
+/* Main Section */
+section {
+  background-color: #f4f6f9;
+}
+/* Sliders Module */
+section.sliders {
+  /* This height and width are relatives to the viewport */
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  p {
+    /* This font size is overriding the variable in order to not be modified when updating the document font size
+        since this text is not needed to be responsive
+        */
+    /* Since we want the text on the sliders section not be modified we need to disable the stylelint to be able to use px */
+    font-size: 16px; /* stylelint-disable-line */
+  }
+}
+div.sliders-wrappers {
+  /* This height and width are relatives to the Sliders Module */
+  width: 100%;
+  background-color: white;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.75);
+}
+div.sliders-zone {
+  /* This height and width are relatives to the Parent */
+  height: 100%;
+  width: 50%;
+}
+div.sliders-zone {
+  p {
+    color: black;
+  }
+}
+ion-range {
+  --bar-background: var(--openforge-orange-lighter-25);
+  --bar-background-active: var(--openforge-orange);
+
+  padding-left: 0;
+  padding-right: 0;
+}
+ion-button {
+  --background: var(--openforge-orange);
+
+  width: 100%;
+}
